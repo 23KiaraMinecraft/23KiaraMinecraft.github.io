@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+body {
+    background-color: rgb(123, 63, 0);
+}
+
+h1, p, h2, a {
+    color: rgb(255, 255, 255);
+}
+
+table.schedule {
+    background: white;
+    border: 10px outset rgb(153, 0, 153);
+    border-collapse: collapse;
+    font-size: 1.25em;
+    width: 100%;
+}
+
+table.schedule th, table.schedule td {
+    border: 1px solid gray;
+    padding: 5px;
+    vertical-align: top;
+}
+
+table.schedule thead {
+    background: rgb(153, 0, 153);
+    color: white;
+}
+
+col#firstCol {
+    background: rgb(218, 210, 218);
+    width: 16%;
+}
+
+col.dayCols {
+    background: rgb(255, 220, 255);
+    width: 16%;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}

@@ -1,0 +1,15 @@
+@import url(base.css);
+
+body {
+    background-color: rgb(200, 162, 200);
+}
+
+header > img {
+    display: block;
+    width: 40%;
+}
+
+div {
+    border: 5px solid black;
+    background-color: rgb(147, 233, 190);
+}

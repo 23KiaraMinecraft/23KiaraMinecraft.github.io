@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Final Project" />
+    <meta name="description" content="Final Project" />
+    <meta name="author" content="Kenneth Toland" />
+    <title>Final Project</title>
+
+    <link href="css/survey.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Survey</h1>
+    <p>Please fill out the short survey below.</p>
+    <header>
+        <form id="survey" action="C:\Users\k.toland\Documents\GitHub\html-tutorial-1-23KiaraMinecraft\final_project\index.html" method="post">
+            <div class="formRow">
+                <label for="rangeBox">Do you think books are better than video games?<br />(0=absoloutely not; 10=absoloutely)</label>
+                0
+                <input name="serviceRate" id="rangeBox" type="range" value="5" step="1" min="0" max="10" />
+                10
+            </div>
+            <br />
+            <div class="formRow">
+                <label>Do you think that video games and books can be used to tell great stories?</label>
+                <fieldset class="optGroup">
+                    <input name="stories" id="hYes" value="yes" type="radio" />
+                    <label for="hYes">Yes</label>
+                    <br>
+                    <input name="stories" id="hNo" value="no" type="radio" />
+                    <label for="hNo">No</label>
+                    <br>
+                    <input name="stories" id="hMaybe" value="maybe" type="radio" />
+                    <label for="hMaybe">Not Sure</label>
+                </fieldset>
+                <br>
+                <label>Select which type of entertainment you enjoy.</label>
+                <fieldset class="checkGroup">
+                    <input name="stories" id="videogames" value="videogames" type="checkbox" />
+                    <label for="videogames">Video Games</label>
+                    <br>
+                    <input name="stories" id="books" value="books" type="checkbox" />
+                    <label for="books">Books</label>
+                    <br>
+                    <input name="stories" id="movies" value="movies" type="checkbox" />
+                    <label for="movies">Movies</label>
+                </fieldset>
+            </div>
+            <br />
+            <div class="formRow">
+                <label for="commaBox">What is your favorite video game or book?</label>
+                <br />
+                <textarea name="custExp" id="commaBox"></textarea>
+            </div>
+            <br />
+            <div class="formRow">
+                <label for="name">What is your name?</label>
+                <input name="name" id="name" type="text" required />
+                <br>
+                <label for="email">What is your email?</label>
+                <input name="email" id="email" type="email" required />
+                <br>
+                <label for="phone">What is your phone number?</label>
+                <input name="phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" required
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+            </div>
+            <br>
+            <div id="buttons">
+                <input type="submit" value="Submit My Survey" />
+                <input type="reset" value="Reset" />
+            </div>
+        </form>
+    </header>
+</body>
+</html>
